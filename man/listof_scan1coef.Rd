@@ -76,11 +76,12 @@ object of class \code{listof_scan1coef}
 \description{
 Create a list of scan1coef objects using \code{\link[qtl2]{scan1coef}}.
 
-Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{scan1coef}.
+Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{\link[qtl2]{scan1coef}}.
 
-Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{scan1coef}.
+Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{\link[qtl2]{scan1coef}}.
 
-Subset of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{scan1coef}.
+Subset of object of class \code{\link{listof_scan1coef}},
+which is a list of objects of class \code{\link[qtl2]{scan1coef}}.
 }
 \examples{
 # read data
@@ -97,7 +98,7 @@ covar <- match(iron$covar$sex, c("f", "m")) # make numeric
 names(covar) <- rownames(iron$covar)
 
 # Calculate scan1coef on all phenotypes,
-# returning a list of \code{\link{scan1coef}} objects
+# returning a list of \code{\link[qtl2]{scan1coef}} objects
 out <- listof_scan1coef(probs[,7], iron$pheno, addcovar = covar, center = TRUE)
 
 # Plot coefficients for all phenotypes

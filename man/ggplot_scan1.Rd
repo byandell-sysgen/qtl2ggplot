@@ -57,7 +57,7 @@ strings.}
 
 \item{shape}{Shapes for points.}
 
-\item{pattern}{Use to group values for plotting (default = \code{NULL}); typically provided by \code{\link{plot_snpasso}} internal routine.}
+\item{pattern}{Use to group values for plotting (default = \code{NULL}); typically provided by \code{\link[qtl2]{plot_snpasso}} internal routine.}
 
 \item{facet}{Plot facets if multiple phenotypes and group provided (default = \code{NULL}).}
 

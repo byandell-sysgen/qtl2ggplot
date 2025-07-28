@@ -39,7 +39,7 @@
 #' @importFrom stats lm runif sd
 #' @importFrom rlang .data
 #'
-#' @seealso \code{\link{plot_coef}}
+#' @seealso \code{\link[qtl2]{plot_coef}}
 #'
 #' @examples
 #' # load qtl2 package for data and genoprob calculation

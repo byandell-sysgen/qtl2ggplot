@@ -7,7 +7,7 @@
 #' @param gap Gap between chromosomes.
 #' @param col Colors for points or lines, with labels.
 #' @param shape Shapes for points. 
-#' @param pattern Use to group values for plotting (default = \code{NULL}); typically provided by \code{\link{plot_snpasso}} internal routine.
+#' @param pattern Use to group values for plotting (default = \code{NULL}); typically provided by \code{\link[qtl2]{plot_snpasso}} internal routine.
 #' @param facet Plot facets if multiple phenotypes and group provided (default = \code{NULL}).
 #' @param patterns Connect SDP patterns: one of \code{c("none","all","hilit")}.
 #' @param chrName Add prefix chromosome name (default \code{"Chr"}).

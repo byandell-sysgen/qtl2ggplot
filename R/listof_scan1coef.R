@@ -30,7 +30,7 @@
 #' names(covar) <- rownames(iron$covar)
 #'
 #' # Calculate scan1coef on all phenotypes,
-#' # returning a list of \code{\link{scan1coef}} objects
+#' # returning a list of \code{\link[qtl2]{scan1coef}} objects
 #' out <- listof_scan1coef(probs[,7], iron$pheno, addcovar = covar, center = TRUE)
 #' 
 #' # Plot coefficients for all phenotypes
@@ -68,10 +68,10 @@ listof_scan1coef <- function(probs, phe, K=NULL, covar=NULL, blups = FALSE,
 
 #' Summary of object of class listof_scan1coef
 #'
-#' Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{scan1coef}.
+#' Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{\link[qtl2]{scan1coef}}.
 #'
-#' @param object object of class \code{listof_scan1coef}
-#' @param scan1_object object from \code{scan1}
+#' @param object object of class \code{\link{listof_scan1coef}}
+#' @param scan1_object object from \code{\link[qtl2]{scan1}}
 #'
 #' @param map A list of vectors of marker positions, as produced by
 #' \code{\link[qtl2]{insert_pseudomarkers}}.
@@ -80,7 +80,7 @@ listof_scan1coef <- function(probs, phe, K=NULL, covar=NULL, blups = FALSE,
 #' @param center center coefficients if \code{TRUE}
 #' @param ... arguments for \code{\link[qtl2]{plot_coef}}
 #'
-#' @author Brian S Yandell, \email{brian.yandell@@wisc.edu}
+#' @author Brian S Yandell, \email{brian.yandell@wisc.edu}
 #' @keywords utilities
 #'
 #' @rdname listof_scan1coef
@@ -126,7 +126,7 @@ summary.listof_scan1coef <- function(object, ...)
 
 #' Summary of object of class listof_scan1coef
 #'
-#' Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{scan1coef}.
+#' Summary of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{\link[qtl2]{scan1coef}}.
 #'
 #' @param object object of class \code{listof_scan1coef}
 #' @param scan1_object object from \code{scan1}
@@ -156,7 +156,8 @@ summary.scan1coef <- function(object, ...)
 
 #' Subset of object of class listof_scan1coef
 #'
-#' Subset of object of class \code{\link{listof_scan1coef}}, which is a list of objects of class \code{scan1coef}.
+#' Subset of object of class \code{\link{listof_scan1coef}},
+#' which is a list of objects of class \code{\link[qtl2]{scan1coef}}.
 #'
 #' @param x object of class \code{listof_scan1coef}
 #' @param elements indexes or names of list elements in x
