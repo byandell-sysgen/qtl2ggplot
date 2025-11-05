@@ -117,8 +117,8 @@ summary_scan1 <- function(object, map, snpinfo=NULL,
                                 names_to = "pheno", values_to = "lod"),
             .data$pheno, .data$chr),
           pos = .data$pos[which.max(.data$lod)],
-          lod = max(.data$lod),
-          marker = .data$mnames[which.max(.data$lod)])),
+          marker = .data$mnames[which.max(.data$lod)],
+          lod = max(.data$lod))),
       .data$chr)
   } else {
     # snpinfo summary

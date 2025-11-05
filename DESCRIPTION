@@ -1,6 +1,6 @@
 Package: qtl2ggplot
-Version: 1.2.5
-Date: 2025-07-28
+Version: 1.2.8
+Date: 2025-11-05
 Title: Data Visualization for QTL Experiments
 Authors@R: c(person("Brian S Yandell",
                 role = c("aut", "cre"),
@@ -37,8 +37,8 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 License: GPL-3
-URL: https://github.com/byandell/qtl2ggplot, https://kbroman.org/qtl2/
-BugReports: https://github.com/byandell/qtl2ggplot/issues
+URL: https://github.com/byandell-sysgen/qtl2ggplot, https://kbroman.org/qtl2/
+BugReports: https://github.com/byandell-sysgen/qtl2ggplot/issues
 Encoding: UTF-8
 ByteCompile: true
 LinkingTo: Rcpp

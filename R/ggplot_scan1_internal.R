@@ -230,7 +230,7 @@ ggplot_scan1_create <-
 
     ## Add lines and/or points.
     if(lines) {
-      p <- p + ggplot2::geom_line(size = lwd)
+      p <- p + ggplot2::geom_line(linewidth = lwd)
     }
     if(points) {
       p <- p + ggplot2::geom_point(size = cex,
