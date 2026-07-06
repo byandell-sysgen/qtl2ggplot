@@ -31,7 +31,7 @@ DOex <-
   qtl2::read_cross2(
     file.path(
       "https://raw.githubusercontent.com/rqtl",
-       "qtl2data/master/DOex",
+       "qtl2data/main/DOex",
        "DOex.zip"))
 ```
 
@@ -41,7 +41,7 @@ Download pre-calculated allele probabilities (~5 MB) as follows:
 ```{r}
 tmpfile <- tempfile()
 file <- paste0("https://raw.githubusercontent.com/rqtl/",
-               "qtl2data/master/DOex/DOex_alleleprobs.rds")
+               "qtl2data/main/DOex/DOex_alleleprobs.rds")
 download.file(file, tmpfile)
 apr <- readRDS(tmpfile)
 unlink(tmpfile)
@@ -173,7 +173,7 @@ Download pre-calculated genotype probabilities (~19 MB) and subset to Chr 2.
 ```{r}
 tmpfile <- tempfile()
 file <- paste0("https://raw.githubusercontent.com/rqtl/",
-               "qtl2data/master/DOex/DOex_genoprobs.rds")
+               "qtl2data/main/DOex/DOex_genoprobs.rds")
 download.file(file, tmpfile)
 pr <- readRDS(tmpfile)
 unlink(tmpfile)
@@ -190,7 +190,7 @@ Download SNP information from web.
 
 ```{r}
 filename <- file.path("https://raw.githubusercontent.com/rqtl",
-                      "qtl2data/master/DOex", 
+                      "qtl2data/main/DOex",
                       "c2_snpinfo.rds")
 tmpfile <- tempfile()
 download.file(filename, tmpfile, quiet=TRUE)
@@ -292,7 +292,7 @@ Download Gene info for DOex from web via RDS.
 
 ```{r}
 filename <- file.path("https://raw.githubusercontent.com/rqtl",
-                      "qtl2data/master/DOex", 
+                      "qtl2data/main/DOex",
                       "c2_genes.rds")
 tmpfile <- tempfile()
 download.file(filename, tmpfile, quiet=TRUE)

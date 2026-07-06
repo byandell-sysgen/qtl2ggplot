@@ -21,7 +21,7 @@
 #'
 #' @examples
 #' filename <- file.path("https://raw.githubusercontent.com/rqtl",
-#'                       "qtl2data/master/DOex", 
+#'                       "qtl2data/main/DOex",
 #'                       "c2_genes.rds")
 #' tmpfile <- tempfile()
 #' download.file(filename, tmpfile, quiet=TRUE)
