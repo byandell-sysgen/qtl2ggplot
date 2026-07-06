@@ -69,7 +69,7 @@
 #' and `ylim` for y-axis limits.
 #'
 #' @examples
-#' dirpath <- "https://raw.githubusercontent.com/rqtl/qtl2data/master/DOex"
+#' dirpath <- "https://raw.githubusercontent.com/rqtl/qtl2data/main/DOex"
 #' 
 #' # Read DOex example cross from 'qtl2data'
 #' DOex <- subset(qtl2::read_cross2(file.path(dirpath, "DOex.zip")), chr = "2")
