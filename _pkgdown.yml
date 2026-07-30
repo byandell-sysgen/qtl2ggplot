@@ -33,15 +33,54 @@ navbar:
     articles:
       text: Guides
       menu:
+        - text: "User Guides"
         - text: "Getting Started with qtl2ggplot"
           href: articles/qtl2ggplot.html
         - text: "---"
+        - text: "Developer Guides"
         - text: "Developer Guide Overview & Architecture"
           href: articles/devel_guide/index.html
         - text: "  Function Index & S3 Class System Breakdown"
           href: articles/devel_guide/modules.html
         - text: "  Data Pipeline & Plotting Architecture"
           href: articles/devel_guide/data_flow.html
+
+reference:
+  - title: "Genome Scans"
+    desc: "Visualizing genome-wide LOD score profile curves"
+    contents:
+      - ggplot_scan1
+      - autoplot.scan1
+      - summary_scan1
+
+  - title: "Coefficient Effects"
+    desc: "Visualizing founder allele effect estimates and QTL coefficients"
+    contents:
+      - ggplot_coef
+      - ggplot_coefCC
+      - autoplot.scan1coef
+      - ggplot_listof_scan1coef
+      - autoplot.listof_scan1coef
+      - ggplot_coef_and_lod
+      - summary_scan1coef
+      - summary_listof_scan1coef
+      - listof_scan1coef
+
+  - title: "SNP Associations & Gene Annotations"
+    desc: "High-density SNP association plots and gene locus structures"
+    contents:
+      - ggplot_snpasso
+      - ggplot_genes
+      - autoplot.genes
+      - ggplot_snpasso_and_genes
+
+  - title: "Phenotypes, Genotypes & Peaks"
+    desc: "Phenotype-by-genotype distributions and peak summaries"
+    contents:
+      - ggplot_pxg
+      - mean_pxg
+      - ggplot_onegeno
+      - ggplot_peaks
 
 articles:
   - title: "User Guides"

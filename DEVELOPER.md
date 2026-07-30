@@ -15,7 +15,7 @@ This document outlines the package architecture, data models, developer setup, c
 | Package / Repository | Role & Details |
 | :--- | :--- |
 | [`qtl2`](https://kbroman.org/qtl2/) | Core statistical engine for genome scans, kinship calculation, and genotype probability mapping |
-| [`qtl2ggplot`](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2ggplot/README.md) | Modern `ggplot2` visualizations for genome scans, coefficients, SNP associations, and gene annotations |
+| [`qtl2ggplot`](ReadMe.md) | Modern `ggplot2` visualizations for genome scans, coefficients, SNP associations, and gene annotations |
 | [`qtl2pattern`](https://github.com/byandell-sysgen/qtl2pattern) | Allele pattern support and contrast analysis for `R/qtl2` |
 | [`qtl2shiny`](https://github.com/byandell-sysgen/qtl2shiny) | Interactive Shiny web application integrating `qtl2ggplot` visualizations |
 
@@ -28,7 +28,7 @@ qtl2ggplot/
 ├── inst/            # Package assets and supplementary data
 ├── man/             # Roxygen2 generated Rd documentation files
 ├── tests/           # Unit test suite using testthat (test-arrange_genes.R, test-map_to_pos.R)
-├── vignettes/       # RMarkdown vignettes (qtl2ggplot.Rmd)
+├── vignettes/       # RMarkdown vignettes (qtl2ggplot.Rmd, devel_guide/)
 ├── DESCRIPTION      # Package metadata, versioning, and dependencies
 └── NAMESPACE        # Exported functions and registered S3 methods
 ```
@@ -41,7 +41,7 @@ qtl2ggplot/
 
 - **R Version**: `>= 3.1.0` (R `>= 4.2.0` recommended)
 - **Roxygen2 Version**: `>= 7.3.3`
-- **Core Dependencies**: Listed in [DESCRIPTION](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2ggplot/DESCRIPTION) (`ggplot2`, `qtl2`, `ggrepel`, `dplyr`, `purrr`, `tidyr`, `rlang`, `assertthat`, `RColorBrewer`, `Rcpp`).
+- **Core Dependencies**: Listed in [DESCRIPTION](DESCRIPTION) (`ggplot2`, `qtl2`, `ggrepel`, `dplyr`, `purrr`, `tidyr`, `rlang`, `assertthat`, `RColorBrewer`, `Rcpp`).
 
 ### Local Development Setup
 
@@ -68,10 +68,10 @@ devtools::document()
 
 | Class | Function / S3 Method | Description |
 | :--- | :--- | :--- |
-| `scan1` | `autoplot.scan1()` / `ggplot_scan1()` | Genome-wide LOD score curve plots across chromosomes |
-| `scan1coef` | `autoplot.scan1coef()` / `ggplot_coef()` | Founder strain allele effects and QTL coefficient curves |
+| `scan1` | `autoplot.scan1()` / `ggplot_scan1()` | Genome-wide LOD score profile curves across chromosomes |
+| `scan1coef` | `autoplot.scan1coef()` / `ggplot_coef()` | Founder allele effect curves and QTL coefficient curves |
 | `listof_scan1coef` | `autoplot.listof_scan1coef()` / `ggplot_listof_scan1coef()` | Multi-model or multi-region coefficient comparisons |
-| `genes` | `autoplot.genes()` / `ggplot_genes()` | Genomic gene exon/intron track visualization |
+| `genes` | `autoplot.genes()` / `ggplot_genes()` | Genomic gene exon track visualization |
 
 ### Specialized Plotting Functions
 
