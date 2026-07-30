@@ -7,3 +7,7 @@ Makefile$
 \.Rout$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.github$
+^docs$
+^_pkgdown\.yml$
+^DEVELOPER\.md$

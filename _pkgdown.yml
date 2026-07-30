@@ -1,0 +1,54 @@
+url: https://byandell-sysgen.github.io/qtl2ggplot
+
+template:
+  bootstrap: 5
+  includes:
+    in_header: |
+      <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+      <style>
+        pre.mermaid {
+          background: transparent !important;
+          border: none !important;
+          box-shadow: none !important;
+          text-align: center;
+        }
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll("pre.mermaid").forEach(function(el) {
+            var code = el.querySelector("code");
+            if (code) {
+              el.textContent = code.textContent;
+            }
+          });
+          mermaid.initialize({ startOnLoad: true });
+        });
+      </script>
+
+navbar:
+  structure:
+    left: [intro, reference, articles]
+    right: [search, github]
+  components:
+    articles:
+      text: Guides
+      menu:
+        - text: "Getting Started with qtl2ggplot"
+          href: articles/qtl2ggplot.html
+        - text: "---"
+        - text: "Developer Guide Overview & Architecture"
+          href: articles/devel_guide/index.html
+        - text: "  Function Index & S3 Class System Breakdown"
+          href: articles/devel_guide/modules.html
+        - text: "  Data Pipeline & Plotting Architecture"
+          href: articles/devel_guide/data_flow.html
+
+articles:
+  - title: "User Guides"
+    contents:
+      - "qtl2ggplot"
+  - title: "Developer Guides"
+    contents:
+      - "devel_guide/index"
+      - "devel_guide/modules"
+      - "devel_guide/data_flow"

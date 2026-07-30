@@ -12,3 +12,4 @@ inst/experiment
 *.rds
 *.zip
 inst/doc/data
+docs/
