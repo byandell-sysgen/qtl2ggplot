@@ -36,8 +36,10 @@
 <li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
-  <ul class="dropdown-menu" aria-labelledby="dropdown-guides"><li><a class="dropdown-item" href="../articles/qtl2ggplot.html">Getting Started with qtl2ggplot</a></li>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-guides"><li><h6 class="dropdown-header" data-toc-skip>User Guides</h6></li>
+    <li><a class="dropdown-item" href="../articles/qtl2ggplot.html">Getting Started with qtl2ggplot</a></li>
     <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Developer Guides</h6></li>
     <li><a class="dropdown-item" href="../articles/devel_guide/index.html">Developer Guide Overview &amp; Architecture</a></li>
     <li><a class="dropdown-item" href="../articles/devel_guide/modules.html">  Function Index &amp; S3 Class System Breakdown</a></li>
     <li><a class="dropdown-item" href="../articles/devel_guide/data_flow.html">  Data Pipeline &amp; Plotting Architecture</a></li>
@@ -57,9 +59,115 @@
     </div>
 
     <div class="section level2">
-      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
+      <h2 id="genome-scans">Genome Scans<a class="anchor" aria-label="anchor" href="#genome-scans"></a></h2>
+
+      <div class="section-desc"><p>Visualizing genome-wide LOD score profile curves</p></div>
+
+      <dl></dl></div><div class="section level2">
 
 
+
+
+      <dl><dt>
+
+          <code><a href="ggplot_scan1.html">ggplot_scan1()</a></code> <code><a href="ggplot_scan1.html">autoplot(<i>&lt;scan1&gt;</i>)</a></code> <code><a href="ggplot_scan1.html">ggplot_scan1_internal()</a></code>
+
+        </dt>
+        <dd>Plot a genome scan</dd>
+
+        <dt>
+
+          <code><a href="summary_scan1.html">summary_scan1()</a></code> <code><a href="summary_scan1.html">summary(<i>&lt;scan1&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Summary of scan1 object</dd>
+      </dl></div><div class="section level2">
+      <h2 id="coefficient-effects">Coefficient Effects<a class="anchor" aria-label="anchor" href="#coefficient-effects"></a></h2>
+
+      <div class="section-desc"><p>Visualizing founder allele effect estimates and QTL coefficients</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="ggplot_coef.html">ggplot_coef()</a></code> <code><a href="ggplot_coef.html">ggplot_coefCC()</a></code> <code><a href="ggplot_coef.html">autoplot(<i>&lt;scan1coef&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Plot QTL effects along chromosome</dd>
+
+        <dt>
+
+          <code><a href="ggplot_listof_scan1coef.html">ggplot_listof_scan1coef()</a></code> <code><a href="ggplot_listof_scan1coef.html">autoplot(<i>&lt;listof_scan1coef&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Plot of object of class listof_scan1coeff</dd>
+
+        <dt>
+
+          <code><a href="listof_scan1coef.html">listof_scan1coef()</a></code> <code><a href="listof_scan1coef.html">summary_listof_scan1coef()</a></code> <code><a href="listof_scan1coef.html">summary(<i>&lt;listof_scan1coef&gt;</i>)</a></code> <code><a href="listof_scan1coef.html">summary_scan1coef()</a></code> <code><a href="listof_scan1coef.html">summary(<i>&lt;scan1coef&gt;</i>)</a></code> <code><a href="listof_scan1coef.html">subset_listof_scan1coef()</a></code> <code><a href="listof_scan1coef.html">subset(<i>&lt;listof_scan1coef&gt;</i>)</a></code> <code><a href="listof_scan1coef.html">`[`(<i>&lt;listof_scan1coef&gt;</i>)</a></code>
+
+        </dt>
+        <dd>List of scan1coef objects</dd>
+      </dl></div><div class="section level2">
+      <h2 id="snp-associations-gene-annotations">SNP Associations &amp; Gene Annotations<a class="anchor" aria-label="anchor" href="#snp-associations-gene-annotations"></a></h2>
+
+      <div class="section-desc"><p>High-density SNP association plots and gene locus structures</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="ggplot_snpasso.html">ggplot_snpasso()</a></code>
+
+        </dt>
+        <dd>Plot SNP associations</dd>
+
+        <dt>
+
+          <code><a href="ggplot_genes.html">ggplot_genes()</a></code> <code><a href="ggplot_genes.html">autoplot(<i>&lt;genes&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Plot gene locations for a genomic interval</dd>
+      </dl></div><div class="section level2">
+      <h2 id="phenotypes-genotypes-peaks">Phenotypes, Genotypes &amp; Peaks<a class="anchor" aria-label="anchor" href="#phenotypes-genotypes-peaks"></a></h2>
+
+      <div class="section-desc"><p>Phenotype-by-genotype distributions and peak summaries</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="ggplot_pxg.html">ggplot_pxg()</a></code> <code><a href="ggplot_pxg.html">mean_pxg()</a></code>
+
+        </dt>
+        <dd>Plot phenotype vs genotype</dd>
+
+        <dt>
+
+          <code><a href="ggplot_onegeno.html">ggplot_onegeno()</a></code>
+
+        </dt>
+        <dd>Plot one individual's genome-wide genotypes</dd>
+
+        <dt>
+
+          <code><a href="ggplot_peaks.html">ggplot_peaks()</a></code>
+
+        </dt>
+        <dd>Plot QTL peak locations</dd>
+      </dl></div><div class="section level2">
+      <h2 id="color-pattern-utilities">Color &amp; Pattern Utilities<a class="anchor" aria-label="anchor" href="#color-pattern-utilities"></a></h2>
+
+      <div class="section-desc"><p>Strain pattern formatting and color palette helpers</p></div>
 
       <dl></dl></div><div class="section level2">
 
@@ -75,13 +183,6 @@
 
         <dt>
 
-          <code><a href="color_patterns_pheno.html">color_patterns_pheno()</a></code>
-
-        </dt>
-        <dd>Set up col, pattern, shape and group for plotting.</dd>
-
-        <dt>
-
           <code><a href="color_patterns_set.html">color_patterns_set()</a></code>
 
         </dt>
@@ -89,73 +190,10 @@
 
         <dt>
 
-          <code><a href="ggplot_coef.html">ggplot_coef()</a></code> <code><a href="ggplot_coef.html">ggplot_coefCC()</a></code> <code><a href="ggplot_coef.html">autoplot(<i>&lt;scan1coef&gt;</i>)</a></code>
+          <code><a href="color_patterns_pheno.html">color_patterns_pheno()</a></code>
 
         </dt>
-        <dd>Plot QTL effects along chromosome</dd>
-
-        <dt>
-
-          <code><a href="ggplot_genes.html">ggplot_genes()</a></code> <code><a href="ggplot_genes.html">autoplot(<i>&lt;genes&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Plot gene locations for a genomic interval</dd>
-
-        <dt>
-
-          <code><a href="ggplot_genes_internal.html">ggplot_genes_internal()</a></code>
-
-        </dt>
-        <dd>GGPlot internal routine for ggplot_genes</dd>
-
-        <dt>
-
-          <code><a href="ggplot_listof_scan1coef.html">ggplot_listof_scan1coef()</a></code> <code><a href="ggplot_listof_scan1coef.html">autoplot(<i>&lt;listof_scan1coef&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Plot of object of class listof_scan1coeff</dd>
-
-        <dt>
-
-          <code><a href="ggplot_onegeno.html">ggplot_onegeno()</a></code>
-
-        </dt>
-        <dd>Plot one individual's genome-wide genotypes</dd>
-
-        <dt>
-
-          <code><a href="ggplot_peaks.html">ggplot_peaks()</a></code>
-
-        </dt>
-        <dd>Plot QTL peak locations</dd>
-
-        <dt>
-
-          <code><a href="ggplot_pxg.html">ggplot_pxg()</a></code> <code><a href="ggplot_pxg.html">mean_pxg()</a></code>
-
-        </dt>
-        <dd>Plot phenotype vs genotype</dd>
-
-        <dt>
-
-          <code><a href="ggplot_scan1.html">ggplot_scan1()</a></code> <code><a href="ggplot_scan1.html">autoplot(<i>&lt;scan1&gt;</i>)</a></code> <code><a href="ggplot_scan1.html">ggplot_scan1_internal()</a></code>
-
-        </dt>
-        <dd>Plot a genome scan</dd>
-
-        <dt>
-
-          <code><a href="ggplot_snpasso.html">ggplot_snpasso()</a></code>
-
-        </dt>
-        <dd>Plot SNP associations</dd>
-
-        <dt>
-
-          <code><a href="listof_scan1coef.html">listof_scan1coef()</a></code> <code><a href="listof_scan1coef.html">summary_listof_scan1coef()</a></code> <code><a href="listof_scan1coef.html">summary(<i>&lt;listof_scan1coef&gt;</i>)</a></code> <code><a href="listof_scan1coef.html">summary_scan1coef()</a></code> <code><a href="listof_scan1coef.html">summary(<i>&lt;scan1coef&gt;</i>)</a></code> <code><a href="listof_scan1coef.html">subset_listof_scan1coef()</a></code> <code><a href="listof_scan1coef.html">subset(<i>&lt;listof_scan1coef&gt;</i>)</a></code> <code><a href="listof_scan1coef.html">`[`(<i>&lt;listof_scan1coef&gt;</i>)</a></code>
-
-        </dt>
-        <dd>List of scan1coef objects</dd>
+        <dd>Set up col, pattern, shape and group for plotting.</dd>
 
         <dt>
 
@@ -163,15 +201,9 @@
 
         </dt>
         <dd>Convert sdp to pattern</dd>
-
-        <dt>
-
-          <code><a href="summary_scan1.html">summary_scan1()</a></code> <code><a href="summary_scan1.html">summary(<i>&lt;scan1&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Summary of scan1 object</dd>
       </dl></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">

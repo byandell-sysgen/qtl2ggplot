@@ -36,8 +36,10 @@
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
-  <ul class="dropdown-menu" aria-labelledby="dropdown-guides"><li><a class="dropdown-item" href="articles/qtl2ggplot.html">Getting Started with qtl2ggplot</a></li>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-guides"><li><h6 class="dropdown-header" data-toc-skip>User Guides</h6></li>
+    <li><a class="dropdown-item" href="articles/qtl2ggplot.html">Getting Started with qtl2ggplot</a></li>
     <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Developer Guides</h6></li>
     <li><a class="dropdown-item" href="articles/devel_guide/index.html">Developer Guide Overview &amp; Architecture</a></li>
     <li><a class="dropdown-item" href="articles/devel_guide/modules.html">  Function Index &amp; S3 Class System Breakdown</a></li>
     <li><a class="dropdown-item" href="articles/devel_guide/data_flow.html">  Data Pipeline &amp; Plotting Architecture</a></li>
@@ -70,7 +72,7 @@
 <th align="left">Role &amp; Details</th>
 </tr></thead><tbody><tr><td align="left"><a href="https://kbroman.org/qtl2/" class="external-link"><code>qtl2</code></a></td>
 <td align="left">Core statistical engine for genome scans, kinship calculation, and genotype probability mapping</td>
-</tr><tr><td align="left"><a href="file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2ggplot/README.md"><code>qtl2ggplot</code></a></td>
+</tr><tr><td align="left"><a href="ReadMe.html"><code>qtl2ggplot</code></a></td>
 <td align="left">Modern <code>ggplot2</code> visualizations for genome scans, coefficients, SNP associations, and gene annotations</td>
 </tr><tr><td align="left"><a href="https://github.com/byandell-sysgen/qtl2pattern" class="external-link"><code>qtl2pattern</code></a></td>
 <td align="left">Allele pattern support and contrast analysis for <code>R/qtl2</code>
@@ -86,7 +88,7 @@
 ├── inst/            # Package assets and supplementary data
 ├── man/             # Roxygen2 generated Rd documentation files
 ├── tests/           # Unit test suite using testthat (test-arrange_genes.R, test-map_to_pos.R)
-├── vignettes/       # RMarkdown vignettes (qtl2ggplot.Rmd)
+├── vignettes/       # RMarkdown vignettes (qtl2ggplot.Rmd, devel_guide/)
 ├── DESCRIPTION      # Package metadata, versioning, and dependencies
 └── NAMESPACE        # Exported functions and registered S3 methods</code></pre>
 <hr></div>
@@ -101,7 +103,7 @@
 <strong>Roxygen2 Version</strong>: <code>&gt;= 7.3.3</code>
 </li>
 <li>
-<strong>Core Dependencies</strong>: Listed in <a href="file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2ggplot/DESCRIPTION">DESCRIPTION</a> (<code>ggplot2</code>, <code>qtl2</code>, <code>ggrepel</code>, <code>dplyr</code>, <code>purrr</code>, <code>tidyr</code>, <code>rlang</code>, <code>assertthat</code>, <code>RColorBrewer</code>, <code>Rcpp</code>).</li>
+<strong>Core Dependencies</strong>: Listed in <a href="DESCRIPTION">DESCRIPTION</a> (<code>ggplot2</code>, <code>qtl2</code>, <code>ggrepel</code>, <code>dplyr</code>, <code>purrr</code>, <code>tidyr</code>, <code>rlang</code>, <code>assertthat</code>, <code>RColorBrewer</code>, <code>Rcpp</code>).</li>
 </ul></div>
 <div class="section level3">
 <h3 id="local-development-setup">Local Development Setup<a class="anchor" aria-label="anchor" href="#local-development-setup"></a></h3>
@@ -129,12 +131,12 @@
 <td align="left">
 <code><a href="reference/ggplot_scan1.html">autoplot.scan1()</a></code> / <code><a href="reference/ggplot_scan1.html">ggplot_scan1()</a></code>
 </td>
-<td align="left">Genome-wide LOD score curve plots across chromosomes</td>
+<td align="left">Genome-wide LOD score profile curves across chromosomes</td>
 </tr><tr><td align="left"><code>scan1coef</code></td>
 <td align="left">
 <code><a href="reference/ggplot_coef.html">autoplot.scan1coef()</a></code> / <code><a href="reference/ggplot_coef.html">ggplot_coef()</a></code>
 </td>
-<td align="left">Founder strain allele effects and QTL coefficient curves</td>
+<td align="left">Founder allele effect curves and QTL coefficient curves</td>
 </tr><tr><td align="left"><code>listof_scan1coef</code></td>
 <td align="left">
 <code><a href="reference/ggplot_listof_scan1coef.html">autoplot.listof_scan1coef()</a></code> / <code><a href="reference/ggplot_listof_scan1coef.html">ggplot_listof_scan1coef()</a></code>
@@ -144,7 +146,7 @@
 <td align="left">
 <code><a href="reference/ggplot_genes.html">autoplot.genes()</a></code> / <code><a href="reference/ggplot_genes.html">ggplot_genes()</a></code>
 </td>
-<td align="left">Genomic gene exon/intron track visualization</td>
+<td align="left">Genomic gene exon track visualization</td>
 </tr></tbody></table></div>
 <div class="section level3">
 <h3 id="specialized-plotting-functions">Specialized Plotting Functions<a class="anchor" aria-label="anchor" href="#specialized-plotting-functions"></a></h3>

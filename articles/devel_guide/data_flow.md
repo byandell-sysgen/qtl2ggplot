@@ -115,7 +115,7 @@ using
 When plotting gene annotations in region scans, multiple genes often
 overlap within identical base pair windows. `qtl2ggplot` delegates
 vertical row assignment to a fast C++ routine `arrange_genes()`
-([`src/arrange_genes.cpp`](file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2ggplot/src/arrange_genes.cpp)):
+([`src/arrange_genes.cpp`](https://github.com/byandell-sysgen/qtl2ggplot/blob/main/src/arrange_genes.cpp)):
 
 ``` cpp
 // C++ algorithm snippet for vertical gene track assignment

@@ -53,8 +53,10 @@
 <li class="active nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-guides" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Guides</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-guides">
-<li><a class="dropdown-item" href="../../articles/qtl2ggplot.html">Getting Started with qtl2ggplot</a></li>
+<li><h6 class="dropdown-header" data-toc-skip>User Guides</h6></li>
+    <li><a class="dropdown-item" href="../../articles/qtl2ggplot.html">Getting Started with qtl2ggplot</a></li>
     <li><hr class="dropdown-divider"></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Developer Guides</h6></li>
     <li><a class="dropdown-item" href="../../articles/devel_guide/index.html">Developer Guide Overview &amp; Architecture</a></li>
     <li><a class="dropdown-item" href="../../articles/devel_guide/modules.html">  Function Index &amp; S3 Class System Breakdown</a></li>
     <li><a class="dropdown-item" href="../../articles/devel_guide/data_flow.html">  Data Pipeline &amp; Plotting Architecture</a></li>
@@ -213,7 +215,7 @@ applies repelling text labels using
 <p>When plotting gene annotations in region scans, multiple genes often
 overlap within identical base pair windows. <code>qtl2ggplot</code>
 delegates vertical row assignment to a fast C++ routine
-<code>arrange_genes()</code> (<a href="file:///Users/brianyandell/Documents/Research/byandell-sysgen/qtl2ggplot/src/arrange_genes.cpp"><code>src/arrange_genes.cpp</code></a>):</p>
+<code>arrange_genes()</code> (<a href="https://github.com/byandell-sysgen/qtl2ggplot/blob/main/src/arrange_genes.cpp" class="external-link"><code>src/arrange_genes.cpp</code></a>):</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co">// C++ algorithm snippet for vertical gene track assignment</span></span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>IntegerVector arrange_genes<span class="op">(</span><span class="at">const</span> NumericVector<span class="op">&amp;</span> start<span class="op">,</span> <span class="at">const</span> NumericVector<span class="op">&amp;</span> end<span class="op">)</span> <span class="op">{</span></span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>    <span class="dt">int</span> n <span class="op">=</span> start<span class="op">.</span>size<span class="op">();</span></span>
