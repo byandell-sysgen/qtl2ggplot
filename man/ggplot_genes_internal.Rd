@@ -38,3 +38,4 @@ object of class \code{\link[ggplot2]{ggplot}}.
 \description{
 Plot genes at positions
 }
+\keyword{internal}

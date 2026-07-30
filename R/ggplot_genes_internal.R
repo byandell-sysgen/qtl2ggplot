@@ -11,6 +11,7 @@
 #' @importFrom ggplot2 aes coord_cartesian element_blank element_rect geom_text ggplot scale_x_continuous theme xlab ylab
 #'                     geom_rect geom_text scale_x_continuous theme element_rect element_blank xlim
 #' @importFrom ggrepel geom_text_repel
+#' @keywords internal
 #' 
 ggplot_genes_internal <-
   function(start, end, strand, rect_top, rect_bottom, 

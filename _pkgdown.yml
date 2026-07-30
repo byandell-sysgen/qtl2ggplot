@@ -61,7 +61,6 @@ reference:
       - autoplot.scan1coef
       - ggplot_listof_scan1coef
       - autoplot.listof_scan1coef
-      - ggplot_coef_and_lod
       - summary_scan1coef
       - summary_listof_scan1coef
       - listof_scan1coef
@@ -72,7 +71,6 @@ reference:
       - ggplot_snpasso
       - ggplot_genes
       - autoplot.genes
-      - ggplot_snpasso_and_genes
 
   - title: "Phenotypes, Genotypes & Peaks"
     desc: "Phenotype-by-genotype distributions and peak summaries"
@@ -81,6 +79,14 @@ reference:
       - mean_pxg
       - ggplot_onegeno
       - ggplot_peaks
+
+  - title: "Color & Pattern Utilities"
+    desc: "Strain pattern formatting and color palette helpers"
+    contents:
+      - color_patterns_get
+      - color_patterns_set
+      - color_patterns_pheno
+      - sdp_to_pattern
 
 articles:
   - title: "User Guides"
